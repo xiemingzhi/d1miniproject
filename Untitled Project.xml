@@ -1,0 +1,73 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="arduino_loop" id="EAg)g_/#Sgta~QPPg4@7" deletable="false" x="37" y="35">
+    <statement name="LOOP_FUNC">
+      <block type="serial_print" id="Y/dF83%I.9/q1tuMX/v;">
+        <field name="SERIAL_ID">Serial</field>
+        <field name="NEW_LINE">TRUE</field>
+        <value name="CONTENT">
+          <block type="text" id="HlUQ!^Zv]d:m|8N@!6{x">
+            <field name="TEXT">from flag</field>
+          </block>
+        </value>
+        <next>
+          <block type="time_delay" id="D)p){ME@at{uxcp?]1n+">
+            <value name="DELAY_TIME_MILI">
+              <block type="math_number" id="vRu+.5m=![6^2H#.:Kx6">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+            <next>
+              <block type="serial_print" id="qjov@o678=J}Ue!wiLmA">
+                <field name="SERIAL_ID">Serial</field>
+                <field name="NEW_LINE">TRUE</field>
+                <value name="CONTENT">
+                  <block type="esp8266_ap_setup" id="`7+hdELf6Tsrt)_g2eA(">
+                    <field name="CHANNEL">1</field>
+                    <field name="HIDDEN">FALSE</field>
+                    <value name="SSID">
+                      <block type="text" id="_Knt=mBX}gU{dR2I.j2L">
+                        <field name="TEXT">ESP8266</field>
+                      </block>
+                    </value>
+                    <value name="PINCODE">
+                      <block type="text" id="2=i_hb=w`1=gm{ork~xR">
+                        <field name="TEXT"></field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="time_delay" id="G/X0qb]xV:pj/Ar[,Sru">
+                    <value name="DELAY_TIME_MILI">
+                      <block type="math_number" id="=6bK_F7FylxI1X=b/TmW">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="serial_print" id=";km]sM8l,3aA^TfrJ,v2">
+                        <field name="SERIAL_ID">Serial</field>
+                        <field name="NEW_LINE">TRUE</field>
+                        <value name="CONTENT">
+                          <block type="esp8266_softAPIP" id="-OS1aRWRF}Z{V[xbGdAl"></block>
+                        </value>
+                        <next>
+                          <block type="time_delay" id="[NUc%li[^GxG1SZCVluv">
+                            <value name="DELAY_TIME_MILI">
+                              <block type="math_number" id="rAV%KRGeP%SDdiNMra-`">
+                                <field name="NUM">1000</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
