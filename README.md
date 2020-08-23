@@ -8,4 +8,5 @@ Simple programs to test wemos d1 mini iot device
 * Open FlagsBlock choose COM Port 
 * Run HelloWorld.ino (Untitled Project.xml/FlagsBlockSketch.ino)
 
+Open arduino IDE, open serial port monitor (ctrl-alt-m), see output
  
